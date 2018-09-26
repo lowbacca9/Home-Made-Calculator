@@ -1,0 +1,19 @@
+print "Enter Digit #1"
+num1=gets.chomp.to_i
+print "Enter '+' or '-'"
+function=gets.chomp
+print "Enter Digit #2"
+num2=gets.chomp.to_i
+
+print "#{num1} #{function} #{num2}
+Are you sure?"
+answer=gets.chomp
+answer.downcase!
+
+if answer.include? "y"
+  if function.include? "+"
+    print num1+num2
+  elsif function.include? "-"
+    print num1-num2
+  end
+end
